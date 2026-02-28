@@ -153,37 +153,55 @@ export default function PricingPage() {
         </div>
 
         {/* Enterprise */}
-        <div className="card-hover bg-gradient-to-b from-forest-500/80 to-forest-500/40 border border-forest-50/30 rounded-xl p-8 flex flex-col">
-          <div className="text-gray-400 label-uppercase mb-2">Enterprise</div>
-          <div className="flex items-baseline gap-1 mb-1">
-            <span className="text-5xl font-bold tracking-tight">$99</span>
+        <div className="group card-hover relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl border border-white/30 rounded-2xl p-8 flex flex-col overflow-hidden shadow-2xl">
+          {/* Premium gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 via-transparent to-gray-900/10 -z-10"></div>
+          
+          <div className="flex items-center justify-between mb-6">
+            <div className="text-gray-200 text-sm font-medium uppercase tracking-wide flex items-center gap-2">
+              Enterprise
+              <svg className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <APIIcon className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity" />
+          </div>
+          
+          <div className="flex items-baseline gap-2 mb-2">
+            <span className="text-5xl font-bold tracking-tight bg-gradient-to-r from-white via-gray-200 to-gray-300 bg-clip-text text-transparent">$99</span>
             <span className="text-gray-400 text-sm">/month</span>
           </div>
-          <div className="text-gray-500 text-sm mb-8">Per team. Billed monthly.</div>
+          <div className="text-gray-400 text-sm mb-8">For teams • Advanced features</div>
+          
           <ul className="space-y-4 text-sm text-gray-300 mb-8 flex-1">
-            <li className="flex items-start gap-3"><IconCheck /> Everything in Pro</li>
-            <li className="flex items-start gap-3"><IconCheck /> Up to 10 team seats</li>
+            <li className="flex items-start gap-3"><IconCheck /> Everything in Professional</li>
+            <li className="flex items-start gap-3"><IconCheck /> <span><strong className="text-white">Up to 10 team seats</strong></span></li>
             <li className="flex items-start gap-3"><IconCheck /> REST API access</li>
             <li className="flex items-start gap-3"><IconCheck /> Custom alert rules</li>
             <li className="flex items-start gap-3"><IconCheck /> Custom weekly reports</li>
             <li className="flex items-start gap-3"><IconCheck /> Slack / Teams integration</li>
             <li className="flex items-start gap-3"><IconCheck /> Dedicated account manager</li>
-            <li className="flex items-start gap-3"><IconCheck /> Priority support</li>
+            <li className="flex items-start gap-3"><IconCheck /> White-glove support</li>
           </ul>
           <CheckoutButton
             priceId="price_1T5wAjPs7Nw0EhG0pozCnUoQ"
             tier="enterprise"
-            className="block w-full text-center border border-gold text-gold px-6 py-3 rounded font-semibold hover:bg-gold hover:text-forest transition-all duration-200"
+            className="block w-full text-center border-2 border-white/40 text-white px-6 py-4 rounded-xl font-semibold hover:bg-white hover:text-forest transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-white/20 backdrop-blur-sm"
           >
-            Start Enterprise Trial
+            Start Enterprise →
           </CheckoutButton>
         </div>
       </div>
 
       {/* FAQ */}
-      <div className="max-w-3xl mx-auto mt-20">
-        <h2 className="text-2xl font-bold text-center mb-10 tracking-tight">Frequently Asked Questions</h2>
-        <div className="space-y-6">
+      <div className="max-w-4xl mx-auto mt-24">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-white via-gold to-white bg-clip-text text-transparent">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-gray-400">Everything you need to know about ContractPulse</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8">
           {[
             {
               q: "Can I try Pro before committing?",
@@ -199,7 +217,7 @@ export default function PricingPage() {
             },
             {
               q: "Where does ContractPulse get its data?",
-              a: "We aggregate data from CanadaBuys (formerly BuyandSell.gc.ca), proactive disclosure databases, MERX, and other public federal procurement sources. Our editorial team adds analysis, context, and insight.",
+              a: "We aggregate data from SAM.gov, USAspending.gov, agency procurement forecasts, and other public federal sources. Our editorial team adds analysis, context, and insight.",
             },
             {
               q: "Is the API included in Enterprise?",
@@ -207,16 +225,46 @@ export default function PricingPage() {
             },
             {
               q: "Do you offer annual billing?",
-              a: "Annual billing with a discount is coming soon. Join the free plan now and we'll notify you when it's available.",
+              a: "Annual billing with a 20% discount is available. Contact support to switch your subscription to annual billing.",
             },
           ].map((item, i) => (
-            <div key={i} className="border-b border-forest-50/20 pb-6">
-              <h3 className="font-semibold text-white mb-2">{item.q}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
+            <div key={i} className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-xl p-6">
+              <h3 className="font-semibold text-white mb-3 flex items-start gap-3">
+                <div className="w-6 h-6 bg-gold rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="text-forest text-sm font-bold">?</span>
+                </div>
+                {item.q}
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed ml-9">{item.a}</p>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Bottom CTA */}
+      <div className="max-w-4xl mx-auto mt-24 text-center">
+        <div className="bg-gradient-to-br from-gold/20 via-gold/10 to-transparent backdrop-blur-xl border border-gold/30 rounded-2xl p-12">
+          <SparkleIcon className="w-16 h-16 mx-auto mb-6" />
+          <h3 className="text-2xl font-bold text-white mb-4">Ready to win more contracts?</h3>
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            Join 1,200+ government contractors who rely on ContractPulse for daily intelligence, 
+            competitive insights, and winning opportunities.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <CheckoutButton
+              priceId="price_1T5wAbPs7Nw0EhG0zpneak89"
+              tier="pro"
+              className="bg-gradient-to-r from-gold via-yellow-400 to-gold text-forest px-8 py-4 rounded-xl font-bold hover:from-yellow-400 hover:to-gold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gold/30"
+            >
+              Start Free Trial →
+            </CheckoutButton>
+            <Link href="/#subscribe" className="border-2 border-white/40 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-forest transition-all duration-300 hover:scale-105">
+              Try Free Plan
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
+    </>
   );
 }
