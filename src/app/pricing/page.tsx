@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CheckoutButton from "./CheckoutButton";
 
 export const metadata: Metadata = {
   title: "Pricing — ContractPulse",
@@ -66,9 +67,13 @@ export default function PricingPage() {
             <li className="flex items-start gap-3"><IconCheck /> Historical trends &amp; analytics</li>
             <li className="flex items-start gap-3"><IconCheck /> Email support</li>
           </ul>
-          <button className="block w-full text-center bg-gold text-forest px-6 py-3 rounded font-semibold hover:bg-gold-300 transition-all duration-200 hover:shadow-lg hover:shadow-gold/20 cursor-pointer">
+          <CheckoutButton
+            priceId="price_1T5wAbPs7Nw0EhG0zpneak89"
+            tier="pro"
+            className="block w-full text-center bg-gold text-forest px-6 py-3 rounded font-semibold hover:bg-gold-300 transition-all duration-200 hover:shadow-lg hover:shadow-gold/20 cursor-pointer"
+          >
             Start 14-Day Free Trial
-          </button>
+          </CheckoutButton>
           <p className="text-center text-gray-500 text-xs mt-3">No credit card required for trial</p>
         </div>
 
@@ -90,9 +95,13 @@ export default function PricingPage() {
             <li className="flex items-start gap-3"><IconCheck /> Dedicated account manager</li>
             <li className="flex items-start gap-3"><IconCheck /> Priority support</li>
           </ul>
-          <Link href="mailto:enterprise@contractpulse.io" className="block w-full text-center border border-gold text-gold px-6 py-3 rounded font-semibold hover:bg-gold hover:text-forest transition-all duration-200">
-            Contact Sales
-          </Link>
+          <CheckoutButton
+            priceId="price_1T5wAjPs7Nw0EhG0pozCnUoQ"
+            tier="enterprise"
+            className="block w-full text-center border border-gold text-gold px-6 py-3 rounded font-semibold hover:bg-gold hover:text-forest transition-all duration-200"
+          >
+            Start Enterprise Trial
+          </CheckoutButton>
         </div>
       </div>
 
