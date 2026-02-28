@@ -2,6 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import ExitIntentPopup from "../components/ExitIntentPopup";
+import StickyBottomCTA from "../components/StickyBottomCTA";
+import AnimatedStats from "../components/AnimatedStats";
+import NewsletterPreview from "../components/NewsletterPreview";
+import FAQSection from "../components/FAQSection";
+import TrustBar from "../components/TrustBar";
 
 /* ── Inline SVG Icons (Heroicons-style thin outlines) ── */
 const IconTarget = () => (
@@ -101,6 +107,12 @@ function SubscribeForm() {
 export default function Home() {
   return (
     <>
+      {/* Exit Intent Popup */}
+      <ExitIntentPopup />
+      
+      {/* Sticky Bottom CTA */}
+      <StickyBottomCTA />
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-forest via-forest-300 to-forest" />
@@ -136,14 +148,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Honest Trust Signal */}
-      <section className="py-10 bg-forest-500 border-y border-forest-50/10">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-gray-400 text-sm leading-relaxed">
-            Built for government contractors, procurement professionals, and public sector consultants.
-          </p>
-        </div>
-      </section>
+      {/* Trust & Credibility Bar */}
+      <TrustBar />
+
+      {/* Animated Stats */}
+      <AnimatedStats />
 
       {/* What You Get */}
       <section className="py-20">
@@ -201,68 +210,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sample Preview */}
-      <section className="py-20 bg-forest-500">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 tracking-tight">See what you&apos;ll get</h2>
-            <p className="text-gray-400">Read a real issue of ContractPulse</p>
-          </div>
-          <div className="max-w-3xl mx-auto sample-glow">
-            <div className="bg-forest border border-forest-50/30 rounded-xl overflow-hidden">
-              <div className="p-6 border-b border-forest-50/20">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 bg-gold rounded-sm flex items-center justify-center">
-                    <span className="text-forest font-bold text-xs">CP</span>
-                  </div>
-                  <div>
-                    <div className="text-white font-semibold text-sm">ContractPulse Weekly</div>
-                    <div className="text-gray-500 text-xs">Issue #1 — February 28, 2026</div>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6 space-y-4">
-                <div>
-                  <div className="text-gold label-uppercase mb-1">Signal of the Week</div>
-                  <h3 className="text-lg font-bold tracking-tight">Buy Canadian Policy Reshapes Federal Procurement</h3>
-                  <p className="text-gray-400 text-sm mt-2 leading-relaxed">
-                    PSPC&apos;s new Buy Canadian Policy is the most significant procurement policy shift in a decade,
-                    prioritizing Canadian suppliers, materials, and innovation across all federal purchasing...
-                  </p>
-                </div>
-                <div className="border-t border-forest-50/20 pt-4">
-                  <div className="text-gold label-uppercase mb-2">Top Awards This Week</div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-300">Network Solutions Procurement Vehicle — SSC</span>
-                      <span className="text-gold font-semibold">$847M</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-300">Human-Machine Teaming Research — DND</span>
-                      <span className="text-gold font-semibold">$12.4M</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-300">Build Canada Homes RFI — INFC</span>
-                      <span className="text-gold font-semibold">TBD</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center pt-4">
-                  <Link
-                    href="/archive/sample"
-                    className="inline-flex items-center gap-2 bg-gold text-forest px-6 py-3 rounded font-semibold text-sm hover:bg-gold-300 transition-all duration-200 hover:shadow-lg hover:shadow-gold/20"
-                  >
-                    Read the Full Issue
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Newsletter Preview */}
+      <NewsletterPreview />
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Pricing Preview */}
       <section className="py-20">
