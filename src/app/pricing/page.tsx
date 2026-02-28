@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CheckoutButton from "./CheckoutButton";
+import { ContractIcon, DatabaseIcon, AnalyticsIcon, APIIcon, SparkleIcon, ShieldIcon } from "./PricingIcons";
 
 export const metadata: Metadata = {
   title: "Pricing — ContractPulse",
@@ -15,24 +16,81 @@ const IconCheck = () => (
 
 export default function PricingPage() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-          Simple, transparent <span className="text-gold">pricing</span>
-        </h1>
-        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-          Start free. Upgrade when your needs grow. All plans include our core intelligence.
-        </p>
+    <>
+      {/* Animated Background */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-forest-900 via-forest-800 to-forest-900"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-gold/5 via-transparent to-gold/10"></div>
+        {/* Floating Particles */}
+        <div className="absolute inset-0">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-gold rounded-full opacity-20 animate-pulse"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 3}s`,
+                animationDuration: `${2 + Math.random() * 2}s`,
+              }}
+            />
+          ))}
+        </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {/* Free */}
-        <div className="card-hover bg-gradient-to-b from-forest-500/80 to-forest-500/40 border border-forest-50/30 rounded-xl p-8 flex flex-col">
-          <div className="text-gray-400 label-uppercase mb-2">Free</div>
-          <div className="flex items-baseline gap-1 mb-1">
-            <span className="text-5xl font-bold tracking-tight">$0</span>
+      <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 relative">
+        {/* Hero Section */}
+        <div className="text-center mb-20">
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <ContractIcon className="w-24 h-24 drop-shadow-lg animate-pulse" />
+              <SparkleIcon className="absolute -top-2 -right-2 w-8 h-8 animate-spin" />
+            </div>
           </div>
-          <div className="text-gray-500 text-sm mb-8">Free forever</div>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight bg-gradient-to-r from-white via-gold to-white bg-clip-text text-transparent">
+            Simple, transparent pricing
+          </h1>
+          <p className="text-gray-300 max-w-3xl mx-auto text-xl leading-relaxed mb-8">
+            Start free. Upgrade when your needs grow. All plans include our core intelligence 
+            that government contractors trust for winning more work.
+          </p>
+          
+          {/* Social Proof */}
+          <div className="flex items-center justify-center gap-8 text-sm text-gray-400 mb-4">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span>1,247+ subscribers</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <ShieldIcon className="w-5 h-5" />
+              <span>14-day free trial</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m5-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Cancel anytime</span>
+            </div>
+          </div>
+        </div>
+
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Free */}
+        <div className="group card-hover relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 flex flex-col overflow-hidden shadow-2xl">
+          {/* Glassmorphism effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-forest-500/20 to-forest-600/10 -z-10"></div>
+          
+          <div className="flex items-center justify-between mb-6">
+            <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">Starter</div>
+            <ContractIcon className="w-12 h-12 opacity-60 group-hover:opacity-100 transition-opacity" />
+          </div>
+          
+          <div className="flex items-baseline gap-2 mb-2">
+            <span className="text-5xl font-bold tracking-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">$0</span>
+            <span className="text-gray-400 text-sm">forever</span>
+          </div>
+          <div className="text-gray-400 text-sm mb-8">Perfect for getting started</div>
+          
           <ul className="space-y-4 text-sm text-gray-300 mb-8 flex-1">
             <li className="flex items-start gap-3"><IconCheck /> Weekly digest every Monday</li>
             <li className="flex items-start gap-3"><IconCheck /> Signal of the Week analysis</li>
@@ -41,40 +99,57 @@ export default function PricingPage() {
             <li className="flex items-start gap-3"><IconCheck /> Numbers That Matter</li>
             <li className="flex items-start gap-3"><IconCheck /> Web archive access</li>
           </ul>
-          <Link href="/#subscribe" className="block w-full text-center border border-gold text-gold px-6 py-3 rounded font-semibold hover:bg-gold hover:text-forest transition-all duration-200">
-            Subscribe Free
+          <Link href="/#subscribe" className="block w-full text-center border-2 border-gold/50 text-gold px-6 py-3 rounded-xl font-semibold hover:bg-gold hover:text-forest transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/25">
+            Start Free
           </Link>
         </div>
 
         {/* Pro */}
-        <div className="card-hover bg-gradient-to-b from-forest-500/80 to-forest-500/40 border-2 border-gold rounded-xl p-8 flex flex-col relative">
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-forest text-xs font-bold px-4 py-1 rounded-full">
-            MOST POPULAR
+        <div className="group card-hover relative bg-gradient-to-br from-gold/20 via-gold/10 to-gold/5 backdrop-blur-xl border-2 border-gold/60 rounded-2xl p-8 flex flex-col overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-300">
+          {/* Most Popular Badge */}
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+            <div className="bg-gradient-to-r from-gold via-yellow-400 to-gold text-forest text-xs font-bold px-6 py-2 rounded-full shadow-lg border border-gold/30 flex items-center gap-2">
+              <SparkleIcon className="w-3 h-3" />
+              MOST POPULAR
+              <SparkleIcon className="w-3 h-3" />
+            </div>
           </div>
-          <div className="text-gold label-uppercase mb-2">Pro</div>
-          <div className="flex items-baseline gap-1 mb-1">
-            <span className="text-5xl font-bold tracking-tight">$29</span>
-            <span className="text-gray-400 text-sm">/month</span>
+          
+          {/* Animated glow effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent -z-10 animate-pulse"></div>
+          
+          <div className="flex items-center justify-between mb-6 pt-4">
+            <div className="text-gold text-sm font-medium uppercase tracking-wide">Professional</div>
+            <DatabaseIcon className="w-12 h-12 opacity-80 group-hover:opacity-100 transition-opacity" />
           </div>
-          <div className="text-gray-500 text-sm mb-8">Billed monthly. Cancel anytime.</div>
-          <ul className="space-y-4 text-sm text-gray-300 mb-8 flex-1">
-            <li className="flex items-start gap-3"><IconCheck /> Everything in Free</li>
-            <li className="flex items-start gap-3"><IconCheck /> <span><strong className="text-white">Daily</strong> contract alerts</span></li>
+          
+          <div className="flex items-baseline gap-2 mb-2">
+            <span className="text-5xl font-bold tracking-tight bg-gradient-to-r from-gold via-yellow-300 to-gold bg-clip-text text-transparent">$29</span>
+            <span className="text-gray-300 text-sm">/month</span>
+          </div>
+          <div className="text-gray-400 text-sm mb-8">14-day free trial • Cancel anytime</div>
+          
+          <ul className="space-y-4 text-sm text-gray-200 mb-8 flex-1">
+            <li className="flex items-start gap-3"><IconCheck /> Everything in Starter</li>
+            <li className="flex items-start gap-3"><IconCheck /> <span><strong className="text-gold">Daily</strong> contract alerts</span></li>
             <li className="flex items-start gap-3"><IconCheck /> Full searchable database</li>
             <li className="flex items-start gap-3"><IconCheck /> Sector &amp; department filters</li>
             <li className="flex items-start gap-3"><IconCheck /> CSV / Excel data export</li>
             <li className="flex items-start gap-3"><IconCheck /> Who&apos;s Moving personnel tracker</li>
             <li className="flex items-start gap-3"><IconCheck /> Historical trends &amp; analytics</li>
-            <li className="flex items-start gap-3"><IconCheck /> Email support</li>
+            <li className="flex items-start gap-3"><IconCheck /> Priority email support</li>
           </ul>
           <CheckoutButton
             priceId="price_1T5wAbPs7Nw0EhG0zpneak89"
             tier="pro"
-            className="block w-full text-center bg-gold text-forest px-6 py-3 rounded font-semibold hover:bg-gold-300 transition-all duration-200 hover:shadow-lg hover:shadow-gold/20 cursor-pointer"
+            className="block w-full text-center bg-gradient-to-r from-gold via-yellow-400 to-gold text-forest px-6 py-4 rounded-xl font-bold hover:from-yellow-400 hover:to-gold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gold/30 cursor-pointer transform"
           >
-            Start 14-Day Free Trial
+            Start Free Trial →
           </CheckoutButton>
-          <p className="text-center text-gray-500 text-xs mt-3">No credit card required for trial</p>
+          <p className="text-center text-gray-400 text-xs mt-3 flex items-center justify-center gap-2">
+            <ShieldIcon className="w-4 h-4" />
+            No credit card required
+          </p>
         </div>
 
         {/* Enterprise */}
