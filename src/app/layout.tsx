@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import MobileNav from "./MobileNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,7 @@ function Header() {
   return (
     <header className="border-b border-forest-50/20 bg-forest/95 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2.5">
           <div className="w-8 h-8 bg-gold rounded-sm flex items-center justify-center">
             <span className="text-forest font-bold text-sm">CP</span>
           </div>
@@ -48,11 +49,12 @@ function Header() {
           </Link>
           <Link
             href="/#subscribe"
-            className="bg-gold text-forest px-4 py-2 rounded text-sm font-semibold hover:bg-gold-300 transition-colors"
+            className="bg-gold text-forest px-5 py-2 rounded text-sm font-semibold hover:bg-gold-300 transition-all duration-200 hover:shadow-lg hover:shadow-gold/20"
           >
             Subscribe Free
           </Link>
         </nav>
+        <MobileNav />
       </div>
     </header>
   );
@@ -62,7 +64,7 @@ function Footer() {
   return (
     <footer className="border-t border-forest-50/20 bg-forest-500">
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-6 h-6 bg-gold rounded-sm flex items-center justify-center">
@@ -76,11 +78,11 @@ function Footer() {
               Canadian government contract intelligence, delivered weekly.
             </p>
             <p className="text-gray-500 text-xs mt-4">
-              A <a href="https://signalstack.io" className="text-gold hover:text-gold-300">SignalStack</a> newsletter.
+              A <a href="https://signalstackmedia.com" className="text-gold hover:text-gold-300 transition-colors">SignalStack</a> newsletter.
             </p>
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Content</h4>
+            <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Content</h4>
             <ul className="space-y-2">
               <li><Link href="/archive" className="text-gray-400 hover:text-gold transition-colors text-sm">Newsletter Archive</Link></li>
               <li><Link href="/archive/sample" className="text-gray-400 hover:text-gold transition-colors text-sm">Sample Issue</Link></li>
@@ -88,14 +90,14 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Product</h4>
+            <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Product</h4>
             <ul className="space-y-2">
               <li><Link href="/pricing" className="text-gray-400 hover:text-gold transition-colors text-sm">Pricing</Link></li>
               <li><Link href="/#subscribe" className="text-gray-400 hover:text-gold transition-colors text-sm">Subscribe</Link></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Legal</h4>
+            <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Legal</h4>
             <ul className="space-y-2">
               <li><Link href="/terms" className="text-gray-400 hover:text-gold transition-colors text-sm">Terms of Service</Link></li>
               <li><Link href="/privacy" className="text-gray-400 hover:text-gold transition-colors text-sm">Privacy Policy</Link></li>
