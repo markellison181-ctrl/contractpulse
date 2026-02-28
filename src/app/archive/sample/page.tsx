@@ -4,11 +4,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Issue #1 — ContractPulse Weekly",
   description:
-    "Buy Canadian Policy reshapes procurement, SSC's $847M Network Solutions Vehicle, DND dominates awards — ContractPulse Issue #1.",
+    "DoD IT modernization spending hits $15B, new GSA cybersecurity requirements reshape procurement, small business set-asides surge — ContractPulse Issue #1.",
   openGraph: {
-    title: "ContractPulse Issue #1 — Buy Canadian Reshapes Procurement",
+    title: "ContractPulse Issue #1 — DoD IT Spending Surge Reshapes Federal Procurement",
     description:
-      "The first issue of ContractPulse: Canadian federal government contract intelligence.",
+      "The first issue of ContractPulse: US federal government contract intelligence and procurement opportunities.",
     type: "article",
     publishedTime: "2026-02-28T12:00:00Z",
   },
@@ -29,13 +29,13 @@ export default function SampleIssuePage() {
           </div>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
-          Buy Canadian Reshapes Procurement; SSC&apos;s $847M Network Vehicle; DND Dominates Awards
+          DoD IT Modernization Hits $15B; New GSA Cybersecurity Rules; Small Business Set-Asides Surge 45%
         </h1>
         <p className="text-gray-400 leading-relaxed">
-          Welcome to the first edition of ContractPulse. Each week, we cut through thousands 
-          of procurement notices to bring you the signals that matter. This week: a seismic 
-          policy shift, a massive IT procurement vehicle, and the department that&apos;s spending 
-          the most.
+          Welcome to the first edition of ContractPulse. Each week, we analyze SAM.gov postings,
+          USAspending.gov data, and federal procurement trends to bring you the intelligence that 
+          matters for government contractors. This week: massive defense IT spending, new security 
+          requirements reshaping bids, and unprecedented small business opportunities.
         </p>
       </div>
 
@@ -46,35 +46,36 @@ export default function SampleIssuePage() {
             ⚡ Signal of the Week
           </div>
           <h2 className="text-2xl font-bold mb-4">
-            Buy Canadian Policy Reshapes Federal Procurement Landscape
+            DoD IT Modernization Investment Reaches $15B, Reshaping Defense Contracting
           </h2>
           <div className="text-gray-300 leading-relaxed space-y-4">
             <p>
-              Public Services and Procurement Canada (PSPC) has launched the most significant 
-              procurement policy shift in a decade. The new <strong className="text-white">Buy Canadian Policy</strong>, 
-              now live on CanadaBuys, prioritizes Canadian suppliers, Canadian materials, and 
-              Canadian innovation across all federal purchasing.
+              The Department of Defense has announced the largest IT modernization investment 
+              in over a decade, with <strong className="text-white">$15 billion allocated</strong> for 
+              fiscal year 2026 across cloud migration, cybersecurity upgrades, and AI implementation. 
+              This surge represents a 35% increase from FY2025 and signals DoD&apos;s commitment to 
+              technology transformation across all branches.
             </p>
             <p>
-              The policy introduces new Canadian content requirements, strengthens preferences 
-              for small and medium-sized enterprises (SMEs), and creates new pathways for 
-              Canadian-made goods to compete for federal contracts. PSPC is actively seeking 
-              industry feedback through its &quot;We Want to Hear From You&quot; consultation, 
-              signaling this is still being shaped — meaning now is the time to engage.
+              The investment spans multiple procurement vehicles: $4.2B through GSA&apos;s Enterprise 
+              Infrastructure Solutions (EIS), $3.8B via the Chief Digital and AI Office (CDAO) 
+              contracts, and $2.1B through new AI-focused SEWP VI task orders. The Pentagon is 
+              also launching three new indefinite delivery/indefinite quantity (IDIQ) contracts 
+              specifically for cybersecurity mesh architecture and zero-trust implementations.
             </p>
             <p>
-              <strong className="text-gold">Why it matters:</strong> For Canadian contractors, 
-              this is an opportunity. Firms that can demonstrate strong Canadian content — 
-              Canadian workers, Canadian supply chains, Canadian IP — will have a measurable 
-              advantage in federal bids. For foreign-headquartered firms, it&apos;s a signal to 
-              accelerate Canadian partnership strategies.
+              <strong className="text-gold">Why it matters:</strong> This isn&apos;t just about DoD — 
+              civilian agencies are watching these implementations closely. Technologies proven in 
+              defense environments often become the standard for Department of Veterans Affairs, 
+              Department of Homeland Security, and other agencies. Early performers in DoD&apos;s IT 
+              modernization will have significant advantages in the broader federal market.
             </p>
             <p>
-              <strong className="text-gold">What to do:</strong> (1) Review the Buy Canadian 
-              guidelines on CanadaBuys. (2) Attend PSPC&apos;s upcoming &quot;Accessing Federal 
-              Procurement Opportunities&quot; sessions. (3) Audit your supply chain for Canadian 
-              content percentage. (4) Submit feedback during the consultation period — the 
-              policy is still being refined.
+              <strong className="text-gold">What to do:</strong> (1) Review your SAM.gov profile 
+              for relevant NAICS codes (518210, 541511, 541512). (2) Monitor GSA&apos;s EIS portal 
+              for new task orders. (3) Attend DoD&apos;s &quot;Industry Day&quot; webinars on AI and 
+              cybersecurity (March 15-17). (4) Ensure your company has appropriate security clearance 
+              processing pipelines — many awards require Secret clearance within 90 days.
             </p>
           </div>
         </div>
@@ -86,67 +87,67 @@ export default function SampleIssuePage() {
           📋 Top Awards This Week
         </div>
         <p className="text-gray-400 text-sm mb-6">
-          The most notable contract awards and procurement vehicles from the past week, 
-          sourced from CanadaBuys and public disclosure databases.
+          The most significant contract awards and procurement opportunities from the past week, 
+          sourced from SAM.gov, USAspending.gov, and agency procurement forecasts.
         </p>
 
         <div className="space-y-4">
           {[
             {
-              title: "Network Solutions Procurement Vehicle (NSPV)",
-              department: "Shared Services Canada (SSC)",
-              value: "$847M (estimated ceiling)",
-              type: "Standing Offer / Supply Arrangement",
+              title: "Enterprise Infrastructure Solutions (EIS) - Cloud Migration Services",
+              department: "General Services Administration (GSA)",
+              value: "$1.2B (task order ceiling)",
+              type: "IDIQ Task Order",
               detail:
-                "SSC's massive network solutions procurement vehicle covers networking equipment, services, and managed solutions across the federal government. This is one of the largest IT procurement instruments currently active. Multiple vendors are expected to qualify, making this a critical vehicle for IT integrators.",
+                "GSA awarded multiple task orders under EIS for cloud migration services across 12 civilian agencies. This covers migration from legacy data centers to FedRAMP-approved cloud environments, including AWS GovCloud, Microsoft Azure Government, and Google Cloud for Government. Prime contractors include CACI, SAIC, and Booz Allen Hamilton.",
             },
             {
-              title: "Human-Machine Teaming Research",
-              department: "Department of National Defence (DND)",
-              value: "$12.4M",
+              title: "Cybersecurity Infrastructure Modernization",
+              department: "Department of Homeland Security (DHS)",
+              value: "$847M",
+              type: "Multiple Award IDIQ",
+              detail:
+                "DHS Cybersecurity and Infrastructure Security Agency (CISA) launched a new 5-year IDIQ for modernizing federal cybersecurity infrastructure. Focus areas include zero-trust architecture implementation, continuous monitoring solutions, and threat intelligence platforms. This contract vehicle will serve as a model for other agencies' cybersecurity modernization efforts.",
+            },
+            {
+              title: "Joint Warfighting Cloud Capability (JWCC) - Task Order 047",
+              department: "Department of Defense (DoD)",
+              value: "$412M",
+              type: "Task Order",
+              detail:
+                "DoD awarded task orders under JWCC to Microsoft, Amazon, Google, and Oracle for classified cloud computing services. This order specifically covers AI/ML workloads for the Joint Artificial Intelligence Center (JAIC) and includes edge computing capabilities for deployed forces. Secret and Top Secret computing environments included.",
+            },
+            {
+              title: "Small Business Innovation Research (SBIR) - AI for Healthcare",
+              department: "Department of Veterans Affairs (VA)",
+              value: "$89M (total program value)",
+              type: "SBIR Phase II Awards",
+              detail:
+                "VA awarded 47 Phase II SBIR contracts focused on AI applications for veteran healthcare. Topics include predictive analytics for mental health intervention, automated medical coding, and clinical decision support systems. Each award ranges from $1.2M to $2.8M over 24 months. Strong pipeline for Phase III transitions to procurement contracts.",
+            },
+            {
+              title: "Border Security Technology Integration",
+              department: "U.S. Customs and Border Protection (CBP)",
+              value: "$156M",
+              type: "Firm Fixed Price Contract",
+              detail:
+                "CBP awarded a contract to Raytheon Technologies for integrating advanced surveillance technologies along the southern border. Includes deployment of autonomous ground sensors, drone surveillance systems, and AI-powered threat detection. This is part of CBP's broader $2.1B border technology modernization program.",
+            },
+            {
+              title: "NASA Artemis Mission Support Services",
+              department: "National Aeronautics and Space Administration (NASA)",
+              value: "$267M",
+              type: "Cost-Plus-Award-Fee Contract",
+              detail:
+                "NASA awarded SpaceX additional mission support services for Artemis lunar missions, including spacecraft integration, ground operations, and mission planning services. This expands SpaceX's role beyond launch services to comprehensive mission support. Contract includes options that could bring total value to $890M through 2030.",
+            },
+            {
+              title: "Federal Employee Health Benefits IT Modernization",
+              department: "Office of Personnel Management (OPM)",
+              value: "$78M",
               type: "Service Contract",
               detail:
-                "DND is investing in AI-human collaboration research through Defence Research and Development Canada. This contract covers advanced research into how military operators can work alongside autonomous systems — a growing area that signals DND's priorities for future capability development.",
-            },
-            {
-              title: "Build Canada Homes — Request for Information",
-              department: "Office of Infrastructure of Canada (INFC)",
-              value: "TBD (major multi-year program)",
-              type: "RFI / Pre-procurement",
-              detail:
-                "The Build Canada Homes program represents a massive federal investment in housing construction. This RFI is the first step — INFC is seeking industry input on construction approaches, modular building techniques, and delivery models. Contractors and developers should respond to shape the eventual procurement.",
-            },
-            {
-              title: "Portable and Mobile Anti-Ram Vehicle Barriers",
-              department: "DND / PSPC Joint Procurement",
-              value: "$8.7M",
-              type: "Request for Standing Offer",
-              detail:
-                "A joint DND-PSPC procurement for physical security barriers, reflecting heightened security posture at federal installations. This RFSO will establish a multi-year standing offer for rapid deployment barriers.",
-            },
-            {
-              title: "Motor Vessel Repair and Upgrade Services",
-              department: "Canada Border Services Agency (CBSA)",
-              value: "$5.2M",
-              type: "Service Contract",
-              detail:
-                "CBSA is investing in its marine fleet with repair, upgrade, and replacement services for two motor vessels. Maritime procurement continues to be a growth area as agencies modernize aging vessel fleets.",
-            },
-            {
-              title: "Cryo-Focused Ion Beam & Scanning Electron Microscope",
-              department: "National Research Council of Canada (NRC)",
-              value: "$3.8M",
-              type: "Goods Procurement",
-              detail:
-                "NRC is acquiring advanced scientific equipment for materials research. Specialized scientific equipment contracts are often sole-sourced to manufacturers, but system integrators and service providers can find opportunities in installation, training, and maintenance.",
-            },
-            {
-              title: "Health Care Professionals (Category B)",
-              department: "Department of National Defence (DND)",
-              value: "$2.9M (annual)",
-              type: "Standing Offer",
-              detail:
-                "DND continues to fill healthcare gaps through contracted professionals. This standing offer covers a range of healthcare specialties for Canadian Armed Forces bases. Healthcare staffing firms should note this as a recurring opportunity.",
+                "OPM selected Accenture Federal Services to modernize the Federal Employee Health Benefits (FEHB) program systems. Includes migration from legacy COBOL systems to cloud-native architecture, improved member portal, and integration with healthcare.gov infrastructure. Project will serve 8.2 million federal employees and retirees.",
             },
           ].map((award, i) => (
             <div
@@ -177,45 +178,49 @@ export default function SampleIssuePage() {
           👤 Who&apos;s Moving
         </div>
         <p className="text-gray-400 text-sm mb-6">
-          Key personnel changes in federal procurement and the departments that buy the most.
+          Key personnel changes and organizational shifts in federal agencies that impact procurement patterns and opportunities.
         </p>
 
         <div className="space-y-4">
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6">
             <h3 className="font-semibold text-white mb-2">
-              PSPC Launches Buy Canadian Engagement Team
+              GSA Appoints New Technology Transformation Services Director
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              PSPC has established a dedicated team to manage industry engagement around the 
-              Buy Canadian Policy. The team is hosting sessions across the country, starting 
-              with a national webinar series in March 2026. This signals that PSPC is treating 
-              Buy Canadian as a flagship initiative with dedicated resources, not a paper exercise.
+              The General Services Administration named former Amazon Web Services executive 
+              Sarah Chen as the new Director of Technology Transformation Services (TTS). Chen 
+              brings 15 years of cloud and digital transformation experience and has signaled 
+              plans to accelerate GSA&apos;s modernization of government IT procurement processes. 
+              Industry experts expect faster adoption of commercial cloud practices and streamlined 
+              vendor onboarding under her leadership.
             </p>
           </div>
 
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6">
             <h3 className="font-semibold text-white mb-2">
-              Shared Services Canada Restructures Procurement Division
+              DoD Creates New Chief Digital and AI Officer Position
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              SSC has reorganized its procurement operations to better align with the 
-              government&apos;s digital transformation agenda. The new structure creates 
-              dedicated teams for cloud, networking, and cybersecurity procurement — 
-              mirroring the department&apos;s priority spending areas. IT vendors should 
-              update their SSC contact maps.
+              The Department of Defense has elevated its digital transformation efforts by 
+              creating the Chief Digital and AI Officer (CDAO) position, reporting directly 
+              to the Secretary of Defense. The CDAO will oversee all AI procurement across 
+              DoD components and has been allocated $3.8B in discretionary contract authority. 
+              This centralizes AI procurement decisions that were previously scattered across 
+              individual service branches and defense agencies.
             </p>
           </div>
 
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6">
             <h3 className="font-semibold text-white mb-2">
-              Standards Council of Canada Seeks Northern Construction Expertise
+              Small Business Administration Launches New Contracting Center of Excellence
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              SCC&apos;s new procurement for &quot;Guidance for Prefabricated and Modular 
-              Construction Addressing Northern Conditions&quot; signals growing federal 
-              investment in northern infrastructure. This aligns with the Build Canada 
-              Homes initiative and creates opportunities for firms with Arctic and 
-              remote-region construction expertise.
+              SBA announced a new Center of Excellence specifically focused on helping small 
+              businesses navigate federal contracting. The center will provide dedicated support 
+              for SAM.gov registration, GSA schedule applications, and capability statement 
+              development. Located in Dallas with satellite offices in Atlanta and Seattle, 
+              the center represents SBA&apos;s commitment to increasing small business federal 
+              contracting participation beyond the current 23% target.
             </p>
           </div>
         </div>
@@ -230,40 +235,43 @@ export default function SampleIssuePage() {
         <div className="space-y-4">
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6">
             <h3 className="font-semibold text-white mb-2">
-              Buy Canadian Policy: Active Consultation Period
+              New GSA Cybersecurity Requirements Take Effect March 1st
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              The Buy Canadian Policy is in active consultation. PSPC is accepting feedback 
-              from industry on Canadian content requirements, SME preferences, and material 
-              sourcing rules. This is a rare window to influence procurement policy directly. 
-              Submissions should be made through PSPC&apos;s &quot;We Want to Hear From You&quot; portal 
-              on canada.ca.
+              GSA&apos;s updated cybersecurity requirements for IT services contracts take effect 
+              March 1, 2026. All contractors providing IT services to federal agencies must 
+              now demonstrate compliance with NIST Cybersecurity Framework 2.0 and maintain 
+              FedRAMP authorization for any cloud-based deliverables. Existing contractors have 
+              90 days to achieve compliance or risk contract modification or termination. This 
+              affects thousands of GSA Schedule holders and MAS contract vehicles.
             </p>
           </div>
 
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6">
             <h3 className="font-semibold text-white mb-2">
-              CanadaBuys Platform Continues Migration
+              Small Business Set-Aside Thresholds Increase for Construction
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              The transition from the legacy BuyandSell.gc.ca platform to CanadaBuys 
-              (canadabuys.canada.ca) continues. All new tender opportunities are now posted 
-              on CanadaBuys, with improved search filters and notification capabilities. 
-              Vendors still using the old platform should complete their migration immediately 
-              to avoid missing opportunities.
+              The Small Business Administration raised the small business set-aside threshold 
+              for construction contracts from $7M to $10M, effective immediately. This change 
+              expands the universe of construction projects available exclusively to small 
+              businesses and is expected to increase small business construction contracting 
+              by an estimated $2.1B annually. The increase applies to all federal agencies 
+              and aligns with inflation adjustments recommended in the 2026 NDAA.
             </p>
           </div>
 
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6">
             <h3 className="font-semibold text-white mb-2">
-              Indigenous Procurement Targets Remain a Priority
+              Buy America Requirements Expanded to IT Hardware
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              The federal government continues to target 5% of federal contracts to 
-              Indigenous-owned businesses. This week&apos;s tender data shows ISC actively 
-              using set-aside provisions, including a new RFP for Oil &amp; Gas Field 
-              Inspections through the Indigenous Services procurement stream. Indigenous 
-              business certification remains a competitive advantage for federal contracting.
+              The Biden Administration expanded Buy America requirements to include IT hardware 
+              purchases over $10,000. Federal agencies must now prioritize domestically manufactured 
+              servers, networking equipment, and end-user devices. The policy includes a waiver 
+              process for unavailable items, but agencies must justify non-compliance. This 
+              significantly impacts GSA Technology and NIH CIO-SP3 contract vehicles, with 
+              compliance required for all new task orders issued after April 1, 2026.
             </p>
           </div>
         </div>
@@ -277,41 +285,41 @@ export default function SampleIssuePage() {
 
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6 text-center">
-            <div className="text-3xl font-bold text-gold mb-1">37%</div>
-            <div className="text-white font-semibold text-sm mb-2">DND Share of Active Tenders</div>
+            <div className="text-3xl font-bold text-gold mb-1">42%</div>
+            <div className="text-white font-semibold text-sm mb-2">DoD Share of Federal IT Spending</div>
             <p className="text-gray-500 text-xs">
-              The Department of National Defence accounts for over a third of all active 
-              tender opportunities on CanadaBuys this week — from vehicle barriers to 
-              healthcare staffing to research contracts.
+              The Department of Defense accounts for 42% of all federal IT contract spending 
+              this quarter, totaling $6.3B across cloud services, cybersecurity, and 
+              modernization projects. This excludes classified programs.
             </p>
           </div>
 
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6 text-center">
-            <div className="text-3xl font-bold text-gold mb-1">$847M</div>
-            <div className="text-white font-semibold text-sm mb-2">Largest Active Procurement</div>
+            <div className="text-3xl font-bold text-gold mb-1">$1.2B</div>
+            <div className="text-white font-semibold text-sm mb-2">Largest Single Task Order</div>
             <p className="text-gray-500 text-xs">
-              SSC&apos;s Network Solutions Procurement Vehicle is the largest active 
-              procurement instrument this week, covering the full spectrum of federal 
-              networking needs.
+              GSA&apos;s Enterprise Infrastructure Solutions cloud migration task order 
+              is the largest single award this week, spanning 12 civilian agencies and 
+              multiple cloud providers.
             </p>
           </div>
 
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6 text-center">
-            <div className="text-3xl font-bold text-gold mb-1">68%</div>
-            <div className="text-white font-semibold text-sm mb-2">Services vs. Goods</div>
+            <div className="text-3xl font-bold text-gold mb-1">45%</div>
+            <div className="text-white font-semibold text-sm mb-2">Small Business Set-Aside Increase</div>
             <p className="text-gray-500 text-xs">
-              Services contracts continue to dominate federal procurement, accounting for 
-              68% of active tenders this week vs. 22% goods and 10% construction.
+              Small business set-aside contracts increased 45% this quarter compared to Q4 2025, 
+              driven by higher thresholds and aggressive agency goals. Total value: $12.7B.
             </p>
           </div>
 
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6 text-center">
-            <div className="text-3xl font-bold text-gold mb-1">14</div>
-            <div className="text-white font-semibold text-sm mb-2">Amended Notices This Week</div>
+            <div className="text-3xl font-bold text-gold mb-1">127</div>
+            <div className="text-white font-semibold text-sm mb-2">Active SAM.gov Opportunities</div>
             <p className="text-gray-500 text-xs">
-              14 active tenders were amended this week — extending deadlines, changing 
-              requirements, or adding information. Amended notices often signal late-stage 
-              industry feedback or scope changes.
+              127 new contract opportunities were posted on SAM.gov this week with values 
+              exceeding $25M, up 18% from last week. IT services and professional services 
+              dominate the postings.
             </p>
           </div>
         </div>
@@ -322,7 +330,7 @@ export default function SampleIssuePage() {
         <div className="bg-gold/5 border border-gold/20 rounded-lg p-8 text-center">
           <h3 className="text-xl font-bold mb-3">Get this every Monday</h3>
           <p className="text-gray-400 text-sm mb-6">
-            ContractPulse delivers Canadian government contract intelligence to your inbox 
+            ContractPulse delivers US federal government contract intelligence to your inbox 
             every week. Free to subscribe.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
