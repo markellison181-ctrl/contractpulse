@@ -10,18 +10,62 @@ export const metadata: Metadata = {
   title: "ContractPulse — Canadian Government Contract Intelligence",
   description:
     "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Built for contractors, consultants, and lobbyists.",
+  keywords: [
+    "government contracts",
+    "federal procurement", 
+    "contract awards",
+    "government contracting",
+    "procurement intelligence",
+    "SAM.gov",
+    "GSA contracts",
+    "federal opportunities"
+  ],
+  authors: [{ name: "SignalStack Media" }],
+  creator: "SignalStack Media",
+  publisher: "SignalStack Media",
+  metadataBase: new URL("https://contractpulse.io"),
+  alternates: {
+    canonical: "https://contractpulse.io",
+  },
   openGraph: {
-    title: "ContractPulse — Canadian Government Contract Intelligence",
+    title: "ContractPulse — Know Who's Winning Government Contracts Before Your Competitors",
     description:
-      "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes.",
+      "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Free weekly digest + Pro daily alerts.",
     type: "website",
     url: "https://contractpulse.io",
+    siteName: "ContractPulse",
+    locale: "en_CA",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ContractPulse - Government Contract Intelligence",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ContractPulse — Canadian Government Contract Intelligence",
+    title: "ContractPulse — Know Who's Winning Government Contracts Before Your Competitors",
     description:
-      "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes.",
+      "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Free weekly digest + Pro daily alerts.",
+    images: ["/og-image.png"],
+    creator: "@SignalStackHQ",
+    site: "@SignalStackHQ",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    // Add Google Search Console verification when ready
   },
 };
 
