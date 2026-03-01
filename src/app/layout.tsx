@@ -139,7 +139,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Product</h4>
+            <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Tools</h4>
             <ul className="space-y-2">
               <li><Link href="/tools/contract-search" className="text-gray-400 hover:text-gold transition-colors text-sm">Contract Search</Link></li>
               <li><Link href="/pricing" className="text-gray-400 hover:text-gold transition-colors text-sm">Pricing</Link></li>
