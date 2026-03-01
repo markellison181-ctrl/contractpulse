@@ -160,6 +160,40 @@ function Footer() {
   );
 }
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://contractpulse.io/#organization",
+      name: "SignalStack Media LLC",
+      url: "https://signalstackmedia.com",
+      logo: "https://contractpulse.io/og-image.png",
+      sameAs: ["https://x.com/SignalStackHQ"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://contractpulse.io/#website",
+      url: "https://contractpulse.io",
+      name: "ContractPulse",
+      publisher: { "@id": "https://contractpulse.io/#organization" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://contractpulse.io/blog?q={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@type": "Periodical",
+      name: "ContractPulse Newsletter",
+      url: "https://contractpulse.io",
+      publisher: { "@id": "https://contractpulse.io/#organization" },
+      description: "Weekly intelligence on U.S. federal government contract awards, procurement trends, and spending shifts.",
+      isAccessibleForFree: true,
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -167,6 +201,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.className} bg-forest text-white antialiased`}>
         <Header />
         <main>{children}</main>
