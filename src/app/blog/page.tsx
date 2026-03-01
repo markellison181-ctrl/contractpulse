@@ -113,7 +113,7 @@ const blogPosts = [
     description: "Navigate the $150B+ small business contracting landscape. Certification requirements, set-aside types, and winning strategies for 8(a), HUBZone, WOSB, and VOSB programs.",
     category: "Guide",
     readTime: "14 min read",
-    publishDate: "Coming Soon",
+    publishDate: "Mar 1, 2026",
     featured: false,
     tags: ["Small Business", "Set-Asides", "Certifications"],
     stats: {
@@ -128,7 +128,7 @@ const blogPosts = [
     description: "Compare GSA Schedules and open market contracting. Cost analysis, time to revenue, and strategic recommendations based on your business profile.",
     category: "Analysis",
     readTime: "10 min read", 
-    publishDate: "Coming Soon",
+    publishDate: "Mar 1, 2026",
     featured: false,
     tags: ["GSA Schedule", "Strategy", "Business Development"],
     stats: {
