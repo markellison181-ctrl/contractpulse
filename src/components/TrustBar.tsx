@@ -1,6 +1,5 @@
 "use client";
 
-// Government Source Logos (simplified SVG representations)
 const GovSourceLogo = ({ name }: { name: string }) => (
   <div className="flex items-center justify-center p-4 bg-white/5 border border-white/10 rounded-lg hover:border-gold/30 transition-all duration-200 group">
     <div className="text-center">
@@ -16,40 +15,12 @@ const GovSourceLogo = ({ name }: { name: string }) => (
   </div>
 );
 
-// Company placeholder logos
-const CompanyLogo = ({ name, sector }: { name: string; sector: string }) => (
-  <div className="flex items-center justify-center p-3 bg-white/5 border border-white/10 rounded-lg hover:border-gold/30 transition-all duration-200 group">
-    <div className="text-center">
-      <div className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-700 rounded-lg flex items-center justify-center mb-2 mx-auto group-hover:from-gold/20 group-hover:to-gold/30 transition-all duration-200">
-        <span className="text-white font-bold text-xs">
-          {name.split(' ').map(word => word[0]).join('').substring(0, 2)}
-        </span>
-      </div>
-      <div className="text-xs font-medium text-gray-300 group-hover:text-white transition-colors">
-        {name}
-      </div>
-      <div className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
-        {sector}
-      </div>
-    </div>
-  </div>
-);
-
 const governmentSources = [
   "SAM.gov",
   "USAspending.gov", 
   "FPDS",
   "Federal Register",
   "GovWin"
-];
-
-const trustedCompanies = [
-  { name: "Acme Defense", sector: "Defense" },
-  { name: "Northern Tech", sector: "IT Services" },
-  { name: "Maple Construction", sector: "Infrastructure" },
-  { name: "Quantum Solutions", sector: "Research" },
-  { name: "Pacific Consulting", sector: "Advisory" },
-  { name: "Metro Engineering", sector: "Engineering" }
 ];
 
 export default function TrustBar() {
@@ -61,7 +32,7 @@ export default function TrustBar() {
         <div className="mb-12">
           <div className="text-center mb-8">
             <p className="text-gray-400 text-sm font-medium uppercase tracking-wider mb-6">
-              Data sourced from official government databases
+              Aggregating intelligence from official government databases
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
@@ -71,26 +42,8 @@ export default function TrustBar() {
           </div>
         </div>
 
-        {/* Trusted By */}
-        <div>
-          <div className="text-center mb-8">
-            <p className="text-gray-400 text-sm font-medium uppercase tracking-wider mb-6">
-              Trusted by government contractors nationwide
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {trustedCompanies.map((company) => (
-              <CompanyLogo 
-                key={company.name} 
-                name={company.name} 
-                sector={company.sector}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Additional Trust Indicators */}
-        <div className="mt-12 pt-8 border-t border-forest-50/20">
+        {/* Trust Indicators */}
+        <div className="pt-8 border-t border-forest-50/20">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-green-500/10 rounded-full border-2 border-green-500/20 mb-3">
