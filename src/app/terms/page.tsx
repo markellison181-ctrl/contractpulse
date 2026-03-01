@@ -13,7 +13,7 @@ export default function TermsPage() {
       <div className="space-y-8 text-gray-300 leading-relaxed text-sm">
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">1. Agreement to Terms</h2>
-          <p>These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;Subscriber,&quot; &quot;you,&quot; or &quot;your&quot;) and SignalStack Media LLC (&quot;SignalStack,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), a limited liability company organized under the laws of Delaware, with its principal office in Wilmington, DE 19801.</p>
+          <p>These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;Subscriber,&quot; &quot;you,&quot; or &quot;your&quot;) and SignalStack Media LLC (&quot;SignalStack,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), a limited liability company organized under the laws of Delaware, with its principal office at 1209 Orange St, Wilmington, DE 19801.</p>
           <p className="mt-3">By accessing ContractPulse (contractpulse.io), subscribing to our newsletter, or using any of our services, you agree to be bound by these Terms and our Privacy Policy.</p>
         </section>
         <section>
@@ -58,7 +58,7 @@ export default function TermsPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">12. Contact</h2>
-          <p>SignalStack Media LLC<br />Wilmington, DE 19801<br />Email: hello@contractpulse.io</p>
+          <p>SignalStack Media LLC<br />1209 Orange St, Wilmington, DE 19801<br />Email: hello@contractpulse.io</p>
         </section>
       </div>
     </div>

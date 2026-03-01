@@ -14,7 +14,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">1. Introduction</h2>
           <p>SignalStack Media LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates ContractPulse (contractpulse.io). This Privacy Policy explains how we collect, use, disclose, and protect your personal information in compliance with the CAN-SPAM Act and applicable U.S. federal and state privacy laws.</p>
-          <p className="mt-3">SignalStack Media LLC is located in Wilmington, DE 19801, United States.</p>
+          <p className="mt-3">SignalStack Media LLC is located at 1209 Orange St, Wilmington, DE 19801, United States.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">2. Information We Collect</h2>
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">11. Contact</h2>
-          <p>Privacy Officer, SignalStack Media LLC<br />Wilmington, DE 19801<br />Email: privacy@contractpulse.io</p>
+          <p>SignalStack Media LLC<br />1209 Orange St, Wilmington, DE 19801<br />Email: privacy@contractpulse.io</p>
           <p className="mt-3">For questions or complaints, contact privacy@contractpulse.io.</p>
         </section>
       </div>
