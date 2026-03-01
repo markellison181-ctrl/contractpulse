@@ -257,8 +257,8 @@ export default function BlogIndexPage() {
                           {post.category}
                         </span>
                       </div>
-                      <div className="text-gray-500 text-sm">{post.readTime}</div>
-                      <div className="text-gray-500 text-sm">{post.publishDate}</div>
+                      <div className="text-gray-400 text-sm">{post.readTime}</div>
+                      <div className="text-gray-400 text-sm">{post.publishDate}</div>
                     </div>
                     
                     <h3 className="text-2xl font-bold mb-4 group-hover:text-gold transition-colors leading-tight">
@@ -333,7 +333,7 @@ export default function BlogIndexPage() {
                     <span className="bg-gold/10 text-gold px-2 py-1 rounded text-xs font-medium">
                       {post.category}
                     </span>
-                    <span className="text-gray-500 text-xs">{post.readTime}</span>
+                    <span className="text-gray-400 text-xs">{post.readTime}</span>
                   </div>
                 </div>
                 
@@ -350,11 +350,11 @@ export default function BlogIndexPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <div className="text-gold font-bold text-lg">{post.stats.value}</div>
-                    <div className="text-gray-500 text-xs">{post.stats.metric}</div>
+                    <div className="text-gray-400 text-xs">{post.stats.metric}</div>
                   </div>
                   
                   {post.publishDate === 'Coming Soon' ? (
-                    <span className="text-gray-500 text-sm">Coming Soon</span>
+                    <span className="text-gray-400 text-sm">Coming Soon</span>
                   ) : (
                     <Link 
                       href={`/blog/${post.slug}`}

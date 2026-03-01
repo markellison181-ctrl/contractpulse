@@ -3,37 +3,37 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Archive — ContractPulse",
-  description: "Browse past issues of ContractPulse, Canadian government contract intelligence newsletter.",
+  description: "Browse past issues of ContractPulse, U.S. federal government contract intelligence newsletter.",
 };
 
 const issues = [
   {
     slug: "sample",
     date: "February 28, 2026",
-    title: "Issue #1 — Buy Canadian Reshapes Procurement; SSC's $847M Network Vehicle; DND Dominates Awards",
-    signal: "Buy Canadian Policy Reshapes Federal Procurement",
+    title: "Issue #1 — DoD IT Modernization Hits $15B; New GSA Cybersecurity Rules; Small Business Set-Asides Surge",
+    signal: "DoD IT Modernization Spending Reaches $15B",
     isNew: true,
   },
 ];
 
 const blogPosts = [
   {
-    slug: "track-federal-government-contracts-canada",
+    slug: "how-to-find-government-contracts-2026-guide",
     date: "February 28, 2026",
-    title: "How to Track Federal Government Contract Awards in Canada (2026 Guide)",
-    description: "A comprehensive guide to monitoring Canadian federal procurement using CanadaBuys, open data, and intelligence tools.",
+    title: "How to Find Government Contracts: The Complete 2026 Guide",
+    description: "Master federal procurement with our comprehensive guide. Learn SAM.gov, GSA schedules, and winning strategies.",
   },
   {
     slug: "largest-government-contracts-this-quarter",
     date: "February 28, 2026",
     title: "The 10 Largest Government Contracts Awarded This Quarter",
-    description: "From defence to IT to infrastructure — the biggest federal contract awards of Q1 2026 and what they signal.",
+    description: "From defense to IT to infrastructure — the biggest federal contract awards of Q1 2026 and what they signal.",
   },
   {
     slug: "government-procurement-trends-2026",
     date: "February 28, 2026",
     title: "Government Procurement Trends: What Contractors Need to Know in 2026",
-    description: "Buy Canadian, digital transformation, and Indigenous procurement — the trends shaping federal contracting this year.",
+    description: "Buy America, digital transformation, and small business set-asides — the trends shaping federal contracting this year.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function ArchivePage() {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-gray-500 text-sm">{issue.date}</span>
+                    <span className="text-gray-400 text-sm">{issue.date}</span>
                     {issue.isNew && (
                       <span className="bg-gold/10 text-gold text-xs font-semibold px-2 py-0.5 rounded-full">NEW</span>
                     )}
@@ -88,7 +88,7 @@ export default function ArchivePage() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <span className="text-gray-500 text-sm">{post.date}</span>
+                  <span className="text-gray-400 text-sm">{post.date}</span>
                   <h3 className="text-lg font-semibold mb-1 mt-1">{post.title}</h3>
                   <p className="text-gray-400 text-sm">{post.description}</p>
                 </div>

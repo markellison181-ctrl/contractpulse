@@ -134,14 +134,14 @@ export default function Home() {
               before your competitors do.
             </h1>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl">
-              ContractPulse delivers weekly intelligence on Canadian federal government
-              contract awards, procurement trends, policy changes, and personnel moves.
+              ContractPulse delivers weekly intelligence on U.S. federal government
+              contract awards, procurement trends, agency spending shifts, and personnel moves.
               The edge you need to win more government business.
             </p>
             <div id="subscribe">
               <SubscribeForm />
-              <p className="text-gray-500 text-xs mt-4">
-                Free weekly digest. No spam. Unsubscribe anytime. CASL compliant.
+              <p className="text-gray-400 text-xs mt-4">
+                Free weekly digest. No spam. Unsubscribe anytime. CAN-SPAM compliant.
               </p>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function Home() {
               {
                 icon: <IconUser />,
                 title: "Who's Moving",
-                description: "Key personnel changes in federal procurement — new ADMs, DG appointments, and moves that shift buying power.",
+                description: "Key personnel changes in federal procurement — new directors, SES appointments, and moves that shift buying power.",
               },
               {
                 icon: <IconScale />,

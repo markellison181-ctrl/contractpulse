@@ -88,7 +88,7 @@ function Header() {
           <Link href="/pricing" className="text-gray-300 hover:text-gold transition-colors text-sm">
             Pricing
           </Link>
-          <Link href="/archive/blog/track-federal-government-contracts-canada" className="text-gray-300 hover:text-gold transition-colors text-sm">
+          <Link href="/blog" className="text-gray-300 hover:text-gold transition-colors text-sm">
             Blog
           </Link>
           <Link
@@ -121,7 +121,7 @@ function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed">
               Federal government contract intelligence, delivered weekly.
             </p>
-            <p className="text-gray-500 text-xs mt-4">
+            <p className="text-gray-400 text-xs mt-4">
               A <a href="https://signalstackmedia.com" className="text-gold hover:text-gold-300 transition-colors">SignalStack</a> newsletter.
             </p>
           </div>
@@ -130,7 +130,7 @@ function Footer() {
             <ul className="space-y-2">
               <li><Link href="/archive" className="text-gray-400 hover:text-gold transition-colors text-sm">Newsletter Archive</Link></li>
               <li><Link href="/archive/sample" className="text-gray-400 hover:text-gold transition-colors text-sm">Sample Issue</Link></li>
-              <li><Link href="/archive/blog/track-federal-government-contracts-canada" className="text-gray-400 hover:text-gold transition-colors text-sm">Blog</Link></li>
+              <li><Link href="/blog" className="text-gray-400 hover:text-gold transition-colors text-sm">Blog</Link></li>
             </ul>
           </div>
           <div>
@@ -149,10 +149,10 @@ function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-forest-50/20 text-center">
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} SignalStack Media Inc. All rights reserved.
+          <p className="text-gray-400 text-sm">
+            © {new Date().getFullYear()} SignalStack Media LLC. All rights reserved.
             <br />
-            181 Bay Street, Suite 1400, Toronto ON M5J 2T3, Canada
+            Wilmington, DE 19801, United States
           </p>
         </div>
       </div>

@@ -40,7 +40,7 @@ const governmentSources = [
   "USAspending.gov", 
   "FPDS",
   "Federal Register",
-  "PSPC Portal"
+  "GovWin"
 ];
 
 const trustedCompanies = [
@@ -98,9 +98,9 @@ export default function TrustBar() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <div className="text-lg font-semibold text-white">CASL Compliant</div>
+              <div className="text-lg font-semibold text-white">CAN-SPAM Compliant</div>
               <div className="text-gray-400 text-sm">
-                Full compliance with Canadian anti-spam legislation
+                Full compliance with U.S. CAN-SPAM Act
               </div>
             </div>
             <div className="space-y-2">

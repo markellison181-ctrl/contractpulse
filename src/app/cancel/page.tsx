@@ -102,11 +102,11 @@ export default function CancelPage() {
           <a href="mailto:support@contractpulse.io" className="text-gold hover:underline">
             Email Support
           </a>
-          <span className="text-gray-600">•</span>
+          <span className="text-gray-500">•</span>
           <Link href="/archive/sample" className="text-gold hover:underline">
             See Sample Issue
           </Link>
-          <span className="text-gray-600">•</span>
+          <span className="text-gray-500">•</span>
           <Link href="/" className="text-gold hover:underline">
             Return Home
           </Link>

@@ -62,7 +62,7 @@ export default function NewsletterPreview() {
                     </div>
                     <div>
                       <div className="text-lg font-bold text-gray-900">ContractPulse Weekly</div>
-                      <div className="text-gray-500 text-sm">Issue #47 — March 6, 2026</div>
+                      <div className="text-gray-400 text-sm">Issue #47 — March 6, 2026</div>
                     </div>
                   </div>
                   <h1 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
@@ -98,21 +98,21 @@ export default function NewsletterPreview() {
                     <div className="flex justify-between items-start border-b border-gray-100 pb-2">
                       <div>
                         <div className="font-medium text-gray-900 text-sm">Cybersecurity Infrastructure Modernization — DHS</div>
-                        <div className="text-gray-500 text-xs">5-year IDIQ for zero-trust architecture</div>
+                        <div className="text-gray-400 text-xs">5-year IDIQ for zero-trust architecture</div>
                       </div>
                       <div className="text-yellow-600 font-bold text-sm whitespace-nowrap ml-4">$847M</div>
                     </div>
                     <div className="flex justify-between items-start border-b border-gray-100 pb-2">
                       <div>
                         <div className="font-medium text-gray-900 text-sm">Cloud Migration Services — GSA</div>
-                        <div className="text-gray-500 text-xs">Enterprise Infrastructure Solutions task orders</div>
+                        <div className="text-gray-400 text-xs">Enterprise Infrastructure Solutions task orders</div>
                       </div>
                       <div className="text-yellow-600 font-bold text-sm whitespace-nowrap ml-4">$412M</div>
                     </div>
                     <div className="flex justify-between items-start border-b border-gray-100 pb-2">
                       <div>
                         <div className="font-medium text-gray-900 text-sm">Border Security Technology — CBP</div>
-                        <div className="text-gray-500 text-xs">AI-powered surveillance systems</div>
+                        <div className="text-gray-400 text-xs">AI-powered surveillance systems</div>
                       </div>
                       <div className="text-yellow-600 font-bold text-sm whitespace-nowrap ml-4">$156M</div>
                     </div>
@@ -191,7 +191,7 @@ export default function NewsletterPreview() {
                 Get This Every Week
               </Link>
             </div>
-            <p className="text-gray-500 text-xs mt-4">
+            <p className="text-gray-400 text-xs mt-4">
               Free weekly digest delivered every Monday. Join 500+ government contractors.
             </p>
           </div>

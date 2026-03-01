@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — ContractPulse",
-  description: "Privacy Policy for ContractPulse by SignalStack Media — PIPEDA and CASL compliant.",
+  description: "Privacy Policy for ContractPulse by SignalStack Media — CAN-SPAM and US privacy law compliant.",
 };
 
 export default function PrivacyPage() {
@@ -13,8 +13,8 @@ export default function PrivacyPage() {
       <div className="space-y-8 text-gray-300 leading-relaxed text-sm">
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">1. Introduction</h2>
-          <p>SignalStack Media Inc. (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates ContractPulse (contractpulse.io). This Privacy Policy explains how we collect, use, disclose, and protect your personal information in compliance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and Canada&apos;s Anti-Spam Legislation (CASL).</p>
-          <p className="mt-3">SignalStack Media Inc. is located at 181 Bay Street, Suite 1400, Toronto, ON M5J 2T3, Canada.</p>
+          <p>SignalStack Media LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates ContractPulse (contractpulse.io). This Privacy Policy explains how we collect, use, disclose, and protect your personal information in compliance with the CAN-SPAM Act and applicable U.S. federal and state privacy laws.</p>
+          <p className="mt-3">SignalStack Media LLC is located in Wilmington, DE 19801, United States.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">2. Information We Collect</h2>
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">4. Consent</h2>
-          <p>By subscribing, you provide express consent to receive commercial electronic messages per CASL. You may withdraw consent at any time by clicking unsubscribe in any email, emailing privacy@contractpulse.io, or writing to our mailing address. Withdrawal is processed within 10 business days.</p>
+          <p>By subscribing, you provide express consent to receive commercial electronic messages per the CAN-SPAM Act. You may withdraw consent at any time by clicking unsubscribe in any email, or emailing privacy@contractpulse.io. Withdrawal is processed within 10 business days.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">5. Disclosure</h2>
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">6. Data Storage and Transfers</h2>
-          <p>Your data may be stored in Canada and the United States where our service providers operate. We ensure adequate safeguards per PIPEDA for international transfers.</p>
+          <p>Your data is stored in the United States where our service providers operate. We implement appropriate safeguards for all data handling.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">7. Security</h2>
@@ -43,11 +43,11 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">8. Retention</h2>
-          <p>Active subscriber data: duration of subscription plus 30 days. Payment records: 7 years (Canadian tax law). Analytics: 26 months. Support communications: 3 years.</p>
+          <p>Active subscriber data: duration of subscription plus 30 days. Payment records: 7 years (U.S. tax law). Analytics: 26 months. Support communications: 3 years.</p>
         </section>
         <section>
-          <h2 className="text-xl font-semibold text-white mb-3">9. Your Rights (PIPEDA)</h2>
-          <p>You may request access to your personal information, request correction of inaccuracies, withdraw consent (subject to legal restrictions), and file a complaint with the Office of the Privacy Commissioner of Canada. Contact our Privacy Officer at privacy@contractpulse.io. We respond within 30 days.</p>
+          <h2 className="text-xl font-semibold text-white mb-3">9. Your Rights</h2>
+          <p>You may request access to your personal information, request correction of inaccuracies, and withdraw consent (subject to legal restrictions). Contact our Privacy Officer at privacy@contractpulse.io. We respond within 30 days.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">10. Cookies</h2>
@@ -55,8 +55,8 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">11. Contact</h2>
-          <p>Privacy Officer, SignalStack Media Inc.<br />181 Bay Street, Suite 1400, Toronto, ON M5J 2T3<br />Email: privacy@contractpulse.io</p>
-          <p className="mt-3">Complaints: Office of the Privacy Commissioner of Canada — www.priv.gc.ca</p>
+          <p>Privacy Officer, SignalStack Media LLC<br />Wilmington, DE 19801<br />Email: privacy@contractpulse.io</p>
+          <p className="mt-3">For questions or complaints, contact privacy@contractpulse.io.</p>
         </section>
       </div>
     </div>

@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "The 10 Largest Government Contracts Awarded This Quarter — ContractPulse",
-  description: "From defence to IT to infrastructure — the biggest Canadian federal contract awards of Q1 2026 and what they signal about government priorities.",
+  description: "From defense to IT to infrastructure — the biggest U.S. federal contract awards of Q1 2026 and what they signal about government priorities.",
   openGraph: {
     title: "The 10 Largest Government Contracts Awarded This Quarter",
-    description: "The biggest Canadian federal contract awards of Q1 2026.",
+    description: "The biggest U.S. federal contract awards of Q1 2026.",
     type: "article",
     publishedTime: "2026-02-28T12:00:00Z",
   },
@@ -24,7 +24,7 @@ export default function BlogPost() {
         <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
           The 10 Largest Government Contracts Awarded This Quarter
         </h1>
-        <div className="flex items-center gap-4 text-gray-500 text-sm">
+        <div className="flex items-center gap-4 text-gray-400 text-sm">
           <span>February 28, 2026</span>
           <span>·</span>
           <span>10 min read</span>
@@ -33,139 +33,123 @@ export default function BlogPost() {
 
       <div className="space-y-6 text-gray-300 leading-relaxed">
         <p className="text-lg text-gray-200">
-          Every quarter, the Canadian federal government awards billions in contracts across defence, 
-          IT, professional services, and construction. Here are the 10 largest procurement actions 
+          Every quarter, the U.S. federal government awards billions in contracts across defense,
+          IT, professional services, and construction. Here are the 10 largest procurement actions
           from Q1 2026 — and what they tell us about where the money is flowing.
         </p>
 
         <div className="bg-gold/5 border border-gold/20 rounded-lg p-6 my-8">
           <p className="text-gold text-sm font-semibold mb-2">Methodology</p>
-          <p className="text-gray-400 text-sm">
-            This analysis is based on CanadaBuys tender data, proactive disclosure records, and 
-            public procurement announcements from January–February 2026. Values represent estimated 
+          <p className="text-gray-300 text-sm">
+            This analysis is based on SAM.gov contract data, USAspending.gov records, and
+            public procurement announcements from January–February 2026. Values represent estimated
             contract ceilings or awarded amounts where disclosed.
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">1. Network Solutions Procurement Vehicle (NSPV) — $847M</h2>
-        <p><strong className="text-white">Department:</strong> Shared Services Canada</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">1. DoD IT Modernization — $15B (program total)</h2>
+        <p><strong className="text-white">Agency:</strong> Department of Defense</p>
         <p>
-          The largest single procurement instrument of the quarter, SSC&apos;s NSPV covers enterprise 
-          networking equipment, managed network services, and related professional services for the 
-          entire federal government. This is a multi-vendor standing offer, meaning multiple 
-          qualified vendors can compete for individual call-ups. IT networking giants including Cisco, 
-          Juniper, and their Canadian integration partners are expected to qualify.
+          The largest procurement initiative of the quarter, DoD&apos;s IT modernization spans
+          cloud migration, cybersecurity upgrades, and AI implementation. Funding flows through
+          GSA&apos;s EIS ($4.2B), CDAO contracts ($3.8B), and new SEWP VI AI-focused task orders ($2.1B).
+          Multiple IDIQ vehicles serve as the primary procurement mechanism.
         </p>
         <p>
-          <strong className="text-gold">Signal:</strong> SSC continues to consolidate federal IT 
-          procurement under large vehicles, reducing the number of individual contracts departments 
-          need to manage.
+          <strong className="text-gold">Signal:</strong> DoD continues to consolidate IT procurement
+          under large vehicles, creating a two-tier market between qualified and unqualified vendors.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">2. Build Canada Homes Program — Estimated $500M+</h2>
-        <p><strong className="text-white">Department:</strong> Office of Infrastructure of Canada</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">2. GSA EIS Cloud Migration — $1.2B</h2>
+        <p><strong className="text-white">Agency:</strong> General Services Administration</p>
         <p>
-          While still at the RFI stage, the Build Canada Homes program is one of the most significant 
-          federal construction initiatives in years. INFC is seeking industry input on prefabricated 
-          and modular construction, innovative delivery models, and approaches to northern and remote 
-          housing. The eventual procurement is expected to be structured as multiple regional contracts.
+          GSA awarded multiple task orders under Enterprise Infrastructure Solutions for cloud migration
+          across 12 civilian agencies. This covers migration from legacy data centers to FedRAMP-approved
+          cloud environments. Prime contractors include CACI, SAIC, and Booz Allen Hamilton.
         </p>
         <p>
-          <strong className="text-gold">Signal:</strong> Housing has become a top federal priority, 
-          and the government is looking beyond traditional construction methods. Modular builders and 
-          firms with northern experience should be positioning now.
+          <strong className="text-gold">Signal:</strong> Cloud migration remains the dominant IT spending
+          category. Firms with FedRAMP expertise have a structural advantage.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">3. Canadian Surface Combatant — Ongoing ($77B total program)</h2>
-        <p><strong className="text-white">Department:</strong> Department of National Defence</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">3. NASA Artemis Mission Support — $890M</h2>
+        <p><strong className="text-white">Agency:</strong> National Aeronautics and Space Administration</p>
         <p>
-          Canada&apos;s largest-ever military procurement continues to generate sub-contracts and supply 
-          chain opportunities. Q1 2026 saw multiple call-ups for specialized engineering services, 
-          weapons systems integration, and combat management system development. Irving Shipbuilding 
-          leads as prime contractor, but hundreds of Canadian firms participate in the supply chain.
-        </p>
-        <p>
-          <strong className="text-gold">Signal:</strong> CSC sub-contracting opportunities will 
-          continue for the next decade. Firms should register with Irving&apos;s supply chain portal.
+          NASA awarded SpaceX and three other contractors a combined $890M for Artemis mission
+          support services, expanding beyond launch services to include spacecraft integration,
+          ground operations, and mission planning.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">4. Shipborne Weapons Life Cycle Management — $45M</h2>
-        <p><strong className="text-white">Department:</strong> Department of National Defence</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">4. DHS Cybersecurity Infrastructure — $847M</h2>
+        <p><strong className="text-white">Agency:</strong> Department of Homeland Security (CISA)</p>
         <p>
-          DND is procuring specialized expertise for managing the life cycle of shipborne weapons 
-          systems, including Levels 2 and 3 specialists. This contract supports both the existing 
-          Halifax-class frigates and the transition to the new CSC fleet. Defence engineering 
-          consultancies are the primary targets.
+          CISA launched a new 5-year IDIQ for modernizing federal cybersecurity infrastructure.
+          Focus areas include zero-trust architecture, continuous monitoring, and threat intelligence
+          platforms. This contract vehicle will serve as a model for other agencies.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">5. Adderback IM/IT Services — $38M</h2>
-        <p><strong className="text-white">Department:</strong> Department of National Defence</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">5. JWCC Cloud Computing — $412M</h2>
+        <p><strong className="text-white">Agency:</strong> Department of Defense</p>
         <p>
-          Another major DND IT services contract, covering information management and information 
-          technology services. The procurement was amended multiple times in Q1, suggesting active 
-          industry engagement and possible scope refinement.
+          DoD awarded task orders under the Joint Warfighting Cloud Capability to Microsoft, Amazon,
+          Google, and Oracle for classified cloud computing services. This order covers AI/ML workloads
+          for JAIC and includes edge computing for deployed forces.
         </p>
         <p>
-          <strong className="text-gold">Signal:</strong> DND remains the single largest buyer of 
-          IT services in the federal government. Their unique security requirements create a 
-          specialized market where cleared firms have significant advantages.
-        </p>
-
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">6. Human-Machine Teaming Research — $12.4M</h2>
-        <p><strong className="text-white">Department:</strong> Defence Research and Development Canada</p>
-        <p>
-          DRDC&apos;s investment in AI-human collaboration research reflects growing military interest in 
-          autonomous systems. This contract covers cognitive science, autonomous systems integration, 
-          and human factors research. Academic institutions and defence research firms are the 
-          likely competitors.
+          <strong className="text-gold">Signal:</strong> Multi-cloud strategy is the new default for
+          classified computing. Vendors must support Secret and Top Secret environments.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">7. Anti-Ram Vehicle Barriers — $8.7M</h2>
-        <p><strong className="text-white">Department:</strong> DND / PSPC Joint</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">6. NASA Artemis Additional Support — $267M</h2>
+        <p><strong className="text-white">Agency:</strong> NASA</p>
         <p>
-          Portable and mobile anti-ram vehicle barriers for federal installations. This is a 
-          standing offer, meaning the government is establishing a supply arrangement for rapid 
-          procurement when needed. Physical security spending has increased in recent years.
+          Additional cost-plus-award-fee contracts for Artemis lunar mission support. Contract includes
+          options that could bring total value to $890M through 2030.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">8. Motor Vessel Services — $5.2M</h2>
-        <p><strong className="text-white">Department:</strong> Canada Border Services Agency</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">7. Border Security Technology — $156M</h2>
+        <p><strong className="text-white">Agency:</strong> U.S. Customs and Border Protection</p>
         <p>
-          CBSA is investing in its marine enforcement capability with repair and upgrade services 
-          for two motor vessels. Marine procurement is a growing niche as multiple agencies 
-          (CBSA, DFO, Coast Guard) modernize aging fleets.
+          CBP awarded Raytheon Technologies a contract for integrating advanced surveillance technologies,
+          including autonomous ground sensors, drone systems, and AI-powered threat detection. Part of
+          CBP&apos;s broader $2.1B border technology modernization program.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">9. Northern Construction Standards — $4.1M</h2>
-        <p><strong className="text-white">Department:</strong> Standards Council of Canada</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">8. VA Healthcare AI — $89M</h2>
+        <p><strong className="text-white">Agency:</strong> Department of Veterans Affairs</p>
         <p>
-          SCC is developing guidance for prefabricated and modular construction in northern 
-          conditions. This contract connects directly to the Build Canada Homes initiative — 
-          the government is building the standards framework before the major construction 
-          procurement begins.
+          VA awarded 47 Phase II SBIR contracts focused on AI applications for veteran healthcare,
+          including predictive analytics for mental health, automated medical coding, and clinical
+          decision support. Each award ranges from $1.2M to $2.8M over 24 months.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">10. Cryo-FIB/SEM Scientific Equipment — $3.8M</h2>
-        <p><strong className="text-white">Department:</strong> National Research Council of Canada</p>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">9. OPM Health Benefits Modernization — $78M</h2>
+        <p><strong className="text-white">Agency:</strong> Office of Personnel Management</p>
         <p>
-          NRC continues to invest in world-class research infrastructure. This advanced 
-          microscopy equipment supports materials science and nanotechnology research. While 
-          the equipment itself comes from specialized manufacturers, installation and ongoing 
-          service contracts create additional opportunities.
+          OPM selected Accenture Federal Services to modernize the Federal Employee Health Benefits
+          program systems, including migration from legacy COBOL to cloud-native architecture.
+          Project serves 8.2 million federal employees and retirees.
+        </p>
+
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">10. SBA Contracting Center of Excellence — $45M</h2>
+        <p><strong className="text-white">Agency:</strong> Small Business Administration</p>
+        <p>
+          SBA announced a new Center of Excellence for helping small businesses navigate federal
+          contracting, with offices in Dallas, Atlanta, and Seattle.
         </p>
 
         <h2 className="text-2xl font-bold text-white mt-10 mb-4">Key Takeaways</h2>
         <ul className="list-disc pl-6 space-y-3">
-          <li><strong className="text-white">DND dominates.</strong> Six of the ten largest procurements involve DND or related defence agencies. Defence remains the federal government&apos;s largest procurement customer.</li>
-          <li><strong className="text-white">IT and digital continue to grow.</strong> SSC&apos;s massive NSPV and DND&apos;s IT services contracts reflect ongoing digital transformation across government.</li>
-          <li><strong className="text-white">Housing is the new frontier.</strong> The Build Canada Homes program signals massive upcoming construction procurement. Firms should be engaging with the RFI now.</li>
-          <li><strong className="text-white">Standing offers and supply arrangements dominate.</strong> The government is increasingly using umbrella procurement instruments rather than one-off contracts, favoring vendors who can qualify for large vehicles.</li>
+          <li><strong className="text-white">DoD dominates.</strong> Defense accounts for the majority of top awards, spanning IT, cloud, and AI investments.</li>
+          <li><strong className="text-white">IT and cloud continue to grow.</strong> GSA&apos;s EIS and DoD&apos;s JWCC represent the largest procurement vehicles in government.</li>
+          <li><strong className="text-white">Cybersecurity is mandatory.</strong> CISA&apos;s new IDIQ and GSA&apos;s compliance requirements make cybersecurity a baseline, not an option.</li>
+          <li><strong className="text-white">Small business opportunities expand.</strong> VA&apos;s SBIR awards and SBA&apos;s new center signal increased small business support.</li>
         </ul>
 
         <div className="mt-12 bg-gold/5 border border-gold/20 rounded-lg p-8">
           <h3 className="text-xl font-bold text-white mb-3">Track These Contracts Weekly</h3>
-          <p className="text-gray-400 mb-4">
-            ContractPulse tracks the largest and most significant federal contracts every week. 
+          <p className="text-gray-300 mb-4">
+            ContractPulse tracks the largest and most significant federal contracts every week.
             Subscribe for free to get the signals that matter.
           </p>
           <Link href="/#subscribe" className="inline-flex items-center gap-2 bg-gold text-forest px-6 py-3 rounded font-semibold text-sm hover:bg-gold-300 transition-colors">

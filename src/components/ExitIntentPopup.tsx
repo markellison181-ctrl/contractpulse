@@ -156,7 +156,7 @@ export default function ExitIntentPopup({ onSubscribe }: ExitIntentPopupProps) {
                 <p className="text-red-400 text-sm text-center">{message}</p>
               )}
               
-              <p className="text-gray-500 text-xs text-center">
+              <p className="text-gray-400 text-xs text-center">
                 Free weekly digest. No spam. Unsubscribe anytime.
               </p>
             </form>

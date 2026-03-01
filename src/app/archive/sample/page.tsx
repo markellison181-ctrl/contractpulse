@@ -25,7 +25,7 @@ export default function SampleIssuePage() {
           </div>
           <div>
             <div className="text-white font-semibold">ContractPulse Weekly</div>
-            <div className="text-gray-500 text-sm">Issue #1 — February 28, 2026</div>
+            <div className="text-gray-400 text-sm">Issue #1 — February 28, 2026</div>
           </div>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
@@ -287,7 +287,7 @@ export default function SampleIssuePage() {
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6 text-center">
             <div className="text-3xl font-bold text-gold mb-1">42%</div>
             <div className="text-white font-semibold text-sm mb-2">DoD Share of Federal IT Spending</div>
-            <p className="text-gray-500 text-xs">
+            <p className="text-gray-400 text-xs">
               The Department of Defense accounts for 42% of all federal IT contract spending 
               this quarter, totaling $6.3B across cloud services, cybersecurity, and 
               modernization projects. This excludes classified programs.
@@ -297,7 +297,7 @@ export default function SampleIssuePage() {
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6 text-center">
             <div className="text-3xl font-bold text-gold mb-1">$1.2B</div>
             <div className="text-white font-semibold text-sm mb-2">Largest Single Task Order</div>
-            <p className="text-gray-500 text-xs">
+            <p className="text-gray-400 text-xs">
               GSA&apos;s Enterprise Infrastructure Solutions cloud migration task order 
               is the largest single award this week, spanning 12 civilian agencies and 
               multiple cloud providers.
@@ -307,7 +307,7 @@ export default function SampleIssuePage() {
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6 text-center">
             <div className="text-3xl font-bold text-gold mb-1">45%</div>
             <div className="text-white font-semibold text-sm mb-2">Small Business Set-Aside Increase</div>
-            <p className="text-gray-500 text-xs">
+            <p className="text-gray-400 text-xs">
               Small business set-aside contracts increased 45% this quarter compared to Q4 2025, 
               driven by higher thresholds and aggressive agency goals. Total value: $12.7B.
             </p>
@@ -316,7 +316,7 @@ export default function SampleIssuePage() {
           <div className="bg-forest-500/30 border border-forest-50/15 rounded-lg p-6 text-center">
             <div className="text-3xl font-bold text-gold mb-1">127</div>
             <div className="text-white font-semibold text-sm mb-2">Active SAM.gov Opportunities</div>
-            <p className="text-gray-500 text-xs">
+            <p className="text-gray-400 text-xs">
               127 new contract opportunities were posted on SAM.gov this week with values 
               exceeding $25M, up 18% from last week. IT services and professional services 
               dominate the postings.

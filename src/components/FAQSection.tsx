@@ -36,7 +36,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "Do you cover all federal departments?",
-    answer: "Yes, we monitor all major federal departments including Defense (DND), Public Services and Procurement Canada (PSPC), Infrastructure Canada (INFC), Innovation, Science and Economic Development Canada (ISED), and many more. Our coverage includes both goods and services contracts across all sectors.",
+    answer: "Yes, we monitor all major federal departments including Defense (DoD), Department of Homeland Security (DHS), General Services Administration (GSA), Department of Veterans Affairs (VA), NASA, and many more. Our coverage includes both goods and services contracts across all sectors.",
     category: "credibility"
   }
 ];
