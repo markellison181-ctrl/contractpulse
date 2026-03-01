@@ -204,6 +204,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script defer data-domain="contractpulse.io" src="https://plausible.io/js/script.js" />
         <link rel="dns-prefetch" href="https://js.stripe.com" />
         <link rel="dns-prefetch" href="https://signalstackmedia.com" />
         <script

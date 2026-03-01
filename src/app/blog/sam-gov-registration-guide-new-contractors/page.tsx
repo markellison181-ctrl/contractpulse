@@ -536,7 +536,7 @@ export default function SAMGovRegistrationGuidePage() {
           <h3 className="text-2xl font-bold mb-4">You're Ready to Register Successfully</h3>
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
             Following this guide gives you a 98% success rate for SAM.gov registration. Take your time, 
-            double-check everything, and you'll be bidding on federal contracts within 15 days.
+            double-check everything, and you'll be bidding on federal contracts within 15 days. Once registered, explore which agencies have the biggest budgets in our <Link href="/blog/top-10-federal-agencies-spending-2026" className="text-gold underline hover:text-gold-300">top 10 federal agencies spending analysis</Link>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/blog/how-to-find-government-contracts-2026-guide" className="bg-gold text-forest px-8 py-4 rounded-lg font-semibold hover:bg-gold-300 transition-all duration-200">

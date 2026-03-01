@@ -215,7 +215,7 @@ export default function GovernmentContractsGuidePage() {
             <p className="text-gray-300 leading-relaxed text-lg">
               The federal government is the largest buyer in the world, spending over <strong className="text-gold">$650 billion annually</strong> on 
               goods and services. This massive market is regulated by the Federal Acquisition Regulation (FAR) 
-              and managed through a complex ecosystem of agencies, contract vehicles, and procurement methods.
+              and managed through a complex ecosystem of agencies, contract vehicles, and procurement methods. Learn which agencies are spending the most in our breakdown of the <Link href="/blog/top-10-federal-agencies-spending-2026" className="text-gold underline hover:text-gold-300">top 10 federal agencies by spending in 2026</Link>.
             </p>
           </div>
 
@@ -327,7 +327,8 @@ export default function GovernmentContractsGuidePage() {
             <p className="text-gray-300 leading-relaxed text-lg">
               The System for Award Management (SAM.gov) is your gateway to federal contracting. Registration is 
               mandatory for any business wanting to receive federal contracts, and the platform serves as both 
-              your business profile and the marketplace for finding opportunities.
+              your business profile and the marketplace for finding opportunities. For a detailed walkthrough of the 
+              registration process, see our <Link href="/blog/sam-gov-registration-guide-new-contractors" className="text-gold underline hover:text-gold-300">SAM.gov Registration Guide for New Contractors</Link>.
             </p>
           </div>
 

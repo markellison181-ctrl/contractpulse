@@ -136,7 +136,7 @@ export default function TopFederalAgenciesSpendingPage() {
             <p className="text-xl text-gray-300 leading-relaxed mb-8 max-w-4xl mx-auto">
               Navigate the $650 billion federal procurement landscape with our data-driven analysis. 
               Discover which agencies offer the biggest opportunities, emerging spending trends, and 
-              <span className="text-gold font-semibold"> insider strategies</span> for winning more contracts.
+              <span className="text-gold font-semibold"> insider strategies</span> for winning more contracts. New to federal contracting? Start with our <Link href="/blog/how-to-find-government-contracts-2026-guide" className="text-gold underline hover:text-gold-300">complete guide to finding government contracts</Link> and our <Link href="/blog/sam-gov-registration-guide-new-contractors" className="text-gold underline hover:text-gold-300">SAM.gov registration walkthrough</Link>.
             </p>
 
             {/* Executive Summary Stats */}
