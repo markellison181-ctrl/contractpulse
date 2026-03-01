@@ -154,6 +154,23 @@ export default function Home() {
       {/* Animated Stats */}
       <AnimatedStats />
 
+      {/* Lead Magnet Banner */}
+      <section className="py-8 bg-blue-600/10 border-y border-blue-500/20">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="text-sm text-blue-400 font-semibold mb-1">📊 FREE REPORT</p>
+            <p className="text-white font-bold text-lg">Top 25 Federal Contract Awards — February 2026</p>
+            <p className="text-gray-400 text-sm">Real USAspending.gov data with our analysis. Unlock instantly.</p>
+          </div>
+          <Link
+            href="/reports/top-federal-contracts-february-2026"
+            className="shrink-0 px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition text-sm"
+          >
+            Get Free Report →
+          </Link>
+        </div>
+      </section>
+
       {/* What You Get */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
