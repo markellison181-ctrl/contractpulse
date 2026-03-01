@@ -84,6 +84,9 @@ function Header() {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8">
+          <Link href="/search" className="text-gray-300 hover:text-gold transition-colors text-sm">
+            Search
+          </Link>
           <Link href="/archive" className="text-gray-300 hover:text-gold transition-colors text-sm">
             Archive
           </Link>
@@ -136,8 +139,9 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Product</h4>
+            <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Tools</h4>
             <ul className="space-y-2">
+              <li><Link href="/search" className="text-gray-400 hover:text-gold transition-colors text-sm">Contract Search</Link></li>
               <li><Link href="/pricing" className="text-gray-400 hover:text-gold transition-colors text-sm">Pricing</Link></li>
               <li><Link href="/#subscribe" className="text-gray-400 hover:text-gold transition-colors text-sm">Subscribe</Link></li>
             </ul>

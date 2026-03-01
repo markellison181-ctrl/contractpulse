@@ -25,6 +25,9 @@ export default function MobileNav() {
       </button>
       {open && (
         <div className="absolute top-full left-0 right-0 bg-forest/98 backdrop-blur-lg border-b border-forest-50/20 p-6 space-y-4">
+          <Link href="/search" onClick={() => setOpen(false)} className="block text-gray-300 hover:text-gold transition-colors py-2 text-lg">
+            Search
+          </Link>
           <Link href="/archive" onClick={() => setOpen(false)} className="block text-gray-300 hover:text-gold transition-colors py-2 text-lg">
             Archive
           </Link>
