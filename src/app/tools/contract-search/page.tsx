@@ -4,35 +4,22 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 interface Contract {
-  Award: {
-    id: number;
-    type: string;
-    type_description: string;
-    description: string;
-    total_obligation: number;
-    date_signed: string;
-  };
-  recipient: {
-    recipient_name: string;
-    recipient_unique_id: string;
-  };
-  awarding_agency: {
-    toptier_agency_name: string;
-    subtier_agency_name: string;
-  };
-  naics: {
-    naics_code: string;
-    naics_description: string;
-  };
+  internal_id: number;
+  "Award ID": string;
+  "Recipient Name": string;
+  "Awarding Agency": string;
+  "Award Amount": number;
+  "Start Date": string;
+  "Description": string;
+  "NAICS Code": string | null;
+  generated_internal_id?: string;
 }
 
 interface SearchResult {
   results: Contract[];
   page_metadata: {
-    total: number;
     page: number;
-    limit: number;
-    total_pages: number;
+    hasNext: boolean;
   };
 }
 
@@ -145,7 +132,7 @@ export default function ContractSearchPage() {
       const searchPayload = {
         filters: {
           ...(searchQuery && {
-            keyword: searchQuery
+            keywords: [searchQuery]
           }),
           ...(agency && {
             agencies: [{
@@ -157,17 +144,20 @@ export default function ContractSearchPage() {
           ...(naicsCode && {
             naics_codes: [naicsCode]
           }),
-          award_type_codes: ["A", "B", "C", "D"], // Contract types only
+          award_type_codes: ["A", "B", "C", "D"],
         },
         fields: [
-          "Award",
-          "recipient",
-          "awarding_agency",
-          "naics"
+          "Award ID",
+          "Recipient Name",
+          "Awarding Agency",
+          "Award Amount",
+          "Start Date",
+          "Description",
+          "NAICS Code"
         ],
         page: 1,
-        limit: 50,
-        sort: "Award.date_signed",
+        limit: 25,
+        sort: "Award Amount",
         order: "desc"
       };
 
@@ -276,7 +266,7 @@ export default function ContractSearchPage() {
               Search Results
             </h2>
             <p className="text-gray-400">
-              {results.page_metadata.total.toLocaleString()} contracts found
+              {results.results.length} contracts shown
             </p>
           </div>
 
@@ -289,21 +279,21 @@ export default function ContractSearchPage() {
             <div className="grid gap-6">
               {results.results.map((contract, index) => (
                 <div
-                  key={`${contract.Award.id}-${index}`}
+                  key={`${contract.internal_id}-${index}`}
                   className="bg-forest-100 border border-forest-50/30 rounded-xl p-6 card-hover"
                 >
                   <div className="space-y-4">
                     <div>
                       <h3 className="font-semibold text-lg text-white mb-2 leading-snug">
-                        {contract.Award.description || 'Contract Award'}
+                        {contract["Description"] || 'Contract Award'}
                       </h3>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 bg-gold/20 text-gold rounded-full text-sm">
-                          {contract.Award.type_description}
+                          {contract["Award ID"]}
                         </span>
-                        {contract.naics?.naics_code && (
+                        {contract["NAICS Code"] && (
                           <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">
-                            NAICS {contract.naics.naics_code}
+                            NAICS {contract["NAICS Code"]}
                           </span>
                         )}
                       </div>
@@ -316,7 +306,7 @@ export default function ContractSearchPage() {
                             Awardee
                           </p>
                           <p className="text-white font-semibold">
-                            {contract.recipient?.recipient_name || 'N/A'}
+                            {contract["Recipient Name"] || 'N/A'}
                           </p>
                         </div>
                         <div>
@@ -324,14 +314,8 @@ export default function ContractSearchPage() {
                             Agency
                           </p>
                           <p className="text-white">
-                            {contract.awarding_agency?.toptier_agency_name || 'N/A'}
+                            {contract["Awarding Agency"] || 'N/A'}
                           </p>
-                          {contract.awarding_agency?.subtier_agency_name && 
-                           contract.awarding_agency.subtier_agency_name !== contract.awarding_agency.toptier_agency_name && (
-                            <p className="text-gray-400 text-sm">
-                              {contract.awarding_agency.subtier_agency_name}
-                            </p>
-                          )}
                         </div>
                       </div>
                       
@@ -341,7 +325,7 @@ export default function ContractSearchPage() {
                             Contract Value
                           </p>
                           <p className="text-2xl font-bold text-gold">
-                            {formatCurrency(contract.Award.total_obligation)}
+                            {formatCurrency(contract["Award Amount"])}
                           </p>
                         </div>
                         <div>
@@ -349,22 +333,11 @@ export default function ContractSearchPage() {
                             Date Signed
                           </p>
                           <p className="text-white">
-                            {formatDate(contract.Award.date_signed)}
+                            {contract["Start Date"] ? formatDate(contract["Start Date"]) : 'N/A'}
                           </p>
                         </div>
                       </div>
                     </div>
-
-                    {contract.naics?.naics_description && (
-                      <div>
-                        <p className="text-sm text-gray-400 uppercase tracking-wide font-medium mb-1">
-                          Industry
-                        </p>
-                        <p className="text-gray-300 text-sm">
-                          {contract.naics.naics_description}
-                        </p>
-                      </div>
-                    )}
                   </div>
                 </div>
               ))}
