@@ -278,6 +278,34 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* Latest Intelligence */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-3">Latest Intelligence</h2>
+            <p className="text-gray-400">Deep-dive analysis from our research team</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <Link href="/blog/how-to-find-government-contracts-2026-guide" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all group">
+              <span className="text-gold group-hover:underline font-medium">How to Find Government Contracts: The Complete 2026 Guide</span>
+              <span className="block text-gray-400 text-sm mt-1">Read article →</span>
+            </Link>
+            <Link href="/blog/sam-gov-registration-guide-new-contractors" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all group">
+              <span className="text-gold group-hover:underline font-medium">SAM.gov Registration: Complete Guide for New Contractors</span>
+              <span className="block text-gray-400 text-sm mt-1">Read article →</span>
+            </Link>
+            <Link href="/blog/top-10-federal-agencies-spending-2026" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all group">
+              <span className="text-gold group-hover:underline font-medium">Top 10 Federal Agencies Spending the Most in 2026</span>
+              <span className="block text-gray-400 text-sm mt-1">Read article →</span>
+            </Link>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/blog" className="text-gold font-semibold hover:underline">View all articles →</Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-20 bg-forest-500">
         <div className="max-w-3xl mx-auto px-6 text-center">

@@ -187,6 +187,13 @@ export default function SAMGovRegistrationGuidePage() {
           </div>
         </div>
       </section>
+        {/* Pro CTA Banner */}
+        <div className="my-12 p-6 rounded-xl bg-gold/10 border border-gold/20 text-center">
+          <p className="text-lg font-semibold mb-2">Get deeper intel with ContractPulse Pro</p>
+          <Link href="/pricing" className="inline-flex items-center gap-2 text-gold font-semibold hover:underline">
+            Unlock Pro features →
+          </Link>
+        </div>
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-6 py-16">
@@ -541,6 +548,23 @@ export default function SAMGovRegistrationGuidePage() {
           </div>
         </section>
       </main>
+    
+      {/* Related Articles */}
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+        <div className="border-t border-gold/20 pt-12">
+          <h3 className="text-2xl font-bold mb-6">Related Articles</h3>
+          <div className="space-y-3">
+                <Link href="/blog/how-to-find-government-contracts-2026-guide" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 hover:bg-gold/5 transition-all">
+                  <span className="text-gold text-sm font-medium">→</span>
+                  <span className="ml-2 text-gray-200 hover:text-white">How to Find Government Contracts: The Complete 2026 Guide</span>
+                </Link>
+                <Link href="/blog/top-10-federal-agencies-spending-2026" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 hover:bg-gold/5 transition-all">
+                  <span className="text-gold text-sm font-medium">→</span>
+                  <span className="ml-2 text-gray-200 hover:text-white">Top 10 Federal Agencies Spending the Most in 2026</span>
+                </Link>
+          </div>
+        </div>
+      </section>
     </article>
   );
 }

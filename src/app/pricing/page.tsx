@@ -193,6 +193,27 @@ export default function PricingPage() {
         </div>
       </div>
 
+      
+
+      {/* Sample Analysis */}
+      <div className="max-w-4xl mx-auto mt-16 mb-8">
+        <h3 className="text-xl font-semibold text-center mb-6">See sample analysis from our team</h3>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/blog/how-to-find-government-contracts-2026-guide" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all text-center">
+            <span className="text-gold text-sm font-medium">How to Find Government Contracts: The Complete 2026 Guide</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+          <Link href="/blog/sam-gov-registration-guide-new-contractors" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all text-center">
+            <span className="text-gold text-sm font-medium">SAM.gov Registration: Complete Guide for New Contractors</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+          <Link href="/blog/top-10-federal-agencies-spending-2026" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all text-center">
+            <span className="text-gold text-sm font-medium">Top 10 Federal Agencies Spending the Most in 2026</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+        </div>
+      </div>
+
       {/* FAQ */}
       <div className="max-w-4xl mx-auto mt-24">
         <div className="text-center mb-16">
