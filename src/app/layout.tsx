@@ -7,9 +7,9 @@ import MobileNav from "./MobileNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ContractPulse — Canadian Government Contract Intelligence",
+  title: "ContractPulse — Federal Government Contract Intelligence",
   description:
-    "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Built for contractors, consultants, and lobbyists.",
+    "Weekly intelligence on U.S. federal government contract awards, procurement trends, and spending shifts. Built for contractors, consultants, and GovCon professionals.",
   keywords: [
     "government contracts",
     "federal procurement", 
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ContractPulse — Know Who's Winning Government Contracts Before Your Competitors",
     description:
-      "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Free weekly digest + Pro daily alerts.",
+      "Weekly intelligence on U.S. federal contract awards, procurement trends, and agency spending shifts. Free weekly digest + Pro daily alerts.",
     type: "website",
     url: "https://contractpulse.io",
     siteName: "ContractPulse",
-    locale: "en_CA",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ContractPulse — Know Who's Winning Government Contracts Before Your Competitors",
     description:
-      "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Free weekly digest + Pro daily alerts.",
+      "Weekly intelligence on U.S. federal contract awards, procurement trends, and agency spending shifts. Free weekly digest + Pro daily alerts.",
     images: ["/og-image.png"],
     creator: "@SignalStackHQ",
     site: "@SignalStackHQ",
@@ -119,7 +119,7 @@ function Footer() {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Canadian government contract intelligence, delivered weekly.
+              Federal government contract intelligence, delivered weekly.
             </p>
             <p className="text-gray-500 text-xs mt-4">
               A <a href="https://signalstackmedia.com" className="text-gold hover:text-gold-300 transition-colors">SignalStack</a> newsletter.
